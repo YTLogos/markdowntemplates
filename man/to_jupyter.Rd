@@ -25,7 +25,7 @@ You specify this as a \code{knit:} replacement in an Rmd YAML header:
 \preformatted{---
 title: "ggplot2 example"
 knit: markdowntemplates::to_jupyter
-output: md_document
+run: true
 ---
 
 ## Introduction to ggplot2
@@ -70,4 +70,3 @@ ggplot(iris, aes(x = Sepal.Length, y = Petal.Length)) +
 ```
 }
 }
-

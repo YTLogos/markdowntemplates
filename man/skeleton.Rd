@@ -2,16 +2,17 @@
 % Please edit documentation in R/default.r
 \encoding{UTF-8}
 \name{skeleton}
-\alias{default}
 \alias{skeleton}
+\alias{default}
 \title{Skeleton CSS framework basic template}
 \usage{
 skeleton(number_sections = FALSE, fig_width = 7, fig_height = 5,
   fig_retina = if (!fig_caption) 2, fig_caption = FALSE, dev = "png",
   toc = FALSE, toc_depth = 3, smart = TRUE, self_contained = TRUE,
-  highlight = "default", mathjax = "default", extra_dependencies = NULL,
-  css = NULL, includes = NULL, keep_md = FALSE, lib_dir = NULL,
-  md_extensions = NULL, pandoc_args = NULL, ...)
+  highlight = "default", mathjax = "default",
+  extra_dependencies = NULL, css = NULL, includes = NULL,
+  keep_md = FALSE, lib_dir = NULL, md_extensions = NULL,
+  pandoc_args = NULL, ...)
 
 default(...)
 }
@@ -20,7 +21,7 @@ default(...)
 
 \item{fig_width}{Default width (in inches) for figures}
 
-\item{fig_height}{Default width (in inches) for figures}
+\item{fig_height}{Default height (in inches) for figures}
 
 \item{fig_retina}{Scaling to perform for retina displays (defaults to 2, which
 currently works for all widely used retina displays). Set to \code{NULL} to
@@ -44,16 +45,16 @@ ellipses.}
 dependencies, using data: URIs to incorporate the contents of linked
 scripts, stylesheets, images, and videos. Note that even for self contained
 documents MathJax is still loaded externally (this is necessary because of
-it's size).}
+its size).}
 
 \item{highlight}{Syntax highlighting style. Supported styles include
 "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenburn",
 "haddock", and "textmate". Pass \code{NULL} to prevent syntax highlighting.}
 
-\item{mathjax}{Include mathjax. The "default" option uses an https URL from
-the official MathJax CDN. The "local" option uses a local version of MathJax
-(which is copied into the output directory). You can pass an alternate URL
-or pass \code{NULL} to exclude MathJax entirely.}
+\item{mathjax}{Include mathjax. The "default" option uses an https URL from a
+MathJax CDN. The "local" option uses a local version of MathJax (which is
+copied into the output directory). You can pass an alternate URL or pass
+\code{NULL} to exclude MathJax entirely.}
 
 \item{extra_dependencies, ...}{Additional function arguments to pass to the
 base R Markdown HTML output formatter}
@@ -108,9 +109,9 @@ date: "`r Sys.Date()`"
 output: markdowntemplates::skeleton
 ---}
 }
+
 \examples{
 \dontrun{
 rmarkdown::render("source.Rmd", clean=TRUE, quiet=TRUE, output_file="output.html")
 }
 }
-

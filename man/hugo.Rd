@@ -5,8 +5,8 @@
 \title{Convert to markdown for a Hugo blog post}
 \usage{
 hugo(toc = FALSE, toc_depth = 3, fig_width = 7, fig_height = 5,
-  fig_retina = 2, dev = "png", includes = NULL, md_extensions = NULL,
-  pandoc_args = NULL)
+  fig_retina = 2, dev = "png", includes = NULL,
+  md_extensions = NULL, pandoc_args = NULL)
 }
 \arguments{
 \item{toc}{\code{TRUE} to include a table of contents in the output}
@@ -15,7 +15,7 @@ hugo(toc = FALSE, toc_depth = 3, fig_width = 7, fig_height = 5,
 
 \item{fig_width}{Default width (in inches) for figures}
 
-\item{fig_height}{Default width (in inches) for figures}
+\item{fig_height}{Default height (in inches) for figures}
 
 \item{fig_retina}{Scaling to perform for retina displays. Defaults to
 \code{NULL} which performs no scaling. A setting of 2 will work for all
@@ -40,4 +40,3 @@ R Markdown output format to pass to \code{\link{render}}
 \description{
 Format for converting from R Markdown to markdown for Hugo
 }
-
